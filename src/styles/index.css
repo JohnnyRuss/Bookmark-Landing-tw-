@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+button {
+  background: none;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (min-width: 31.25em) {
+    padding: 0 3rem;
+  }
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.border-bottom-2 {
+  border-bottom: 2px solid;
+}
+
+.rotate-reverse {
+  transform: rotate(180deg);
+}
